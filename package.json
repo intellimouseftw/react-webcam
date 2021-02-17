@@ -6,8 +6,8 @@
   "types": "dist/react-webcam.d.ts",
   "scripts": {
     "prepare": "npm run build:production",
-    "build": "NODE_ENV=development webpack-cli",
-    "build:production": "npm run build && NODE_ENV=production webpack-cli",
+    "build": "set NODE_ENV=development webpack-cli",
+    "build:production": "npm run build && set NODE_ENV=production webpack-cli",
     "lint": "eslint src/react-webcam.tsx",
     "test": "tsc && jest"
   },
